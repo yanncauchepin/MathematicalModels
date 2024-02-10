@@ -32,6 +32,10 @@ python3 splines.py
 #### Example ####
 
 By default, the script ***splines.py*** target an dataset example located in ***Dataset/spnbmd.csv***. Columns names of variables X and Y are respectively ***'age'*** and ***'spnbmd'***.
+```python
+def main():
+    input_path = 'Dataset/spnbmd.csv'
+```
 ```bash
 python3 splines.py
 ```
