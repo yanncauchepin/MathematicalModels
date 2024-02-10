@@ -11,18 +11,21 @@ Before running this code, ensure you have the following :
 
 ## Usage ##
 
+
 ### Splines ###
 
 1. Navigate to the ***Splines*** directory containing the main script ***splines.py***.
 ```bash
 cd Splines
 ```
+
 2. Open the script ***splines.py*** and edit the input path in ***main*** function to target the desired dataset to use. Indicate also the column names of the interest variable X and Y. Additionally, the user can inform some parameters to configure the algorithm.
 ```python
 def main():
     input_path = 'Dataset/input_path'
 ```
 Note that the input_path is handled in multiple format such as ***csv***, ***xlsx***.
+
 3. Run the script ***splines.py*** either in an IDE such as ***Spyder*** or in shell.
 ```bash
 python3 splines.py
