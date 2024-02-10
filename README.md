@@ -46,7 +46,7 @@ python3 splines.py
 
 ## Results ##
 
-The script display in shell the result in the spline computing. Additionnaly, the program save those score in the ***Output*** directory in a file named ***output.txt***. In this same ***Output*** directory the user will see the graphic of the distribution of variables and the spline line computed in the file named ***graphic.png***.
+The script display in shell the result in the spline computing. Additionnaly, the program save those score in the ***Output*** directory in a file named ***output.txt***. In this same ***Output*** directory the user will see the graphic of the variable distribution and the spline line computed in the file named ***graphic.png***.
 
 ## To do list ##
 
