@@ -11,10 +11,7 @@ Before running this code, ensure you have the following :
 
 ## Usage ##
 
--
-
 ### Splines ###
-
 1. Navigate to the ***Splines*** directory containing the main script ***splines.py***.
 ```bash
 cd Splines
