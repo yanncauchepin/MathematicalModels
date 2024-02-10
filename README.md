@@ -25,8 +25,9 @@ cd Splines
 
 2. Open the script ***splines.py*** and edit the input path in ***main*** function to target the desired dataset to use. Indicate also the column names of the interest variable X and Y. Additionally, the user can inform some parameters to configure the algorithm.
 ```python
-def main():
+if __name__ == "__main__" :
     input_path = 'Dataset/input_path'
+    splines(input_path)
 ```
 
 3. Run the script ***splines.py*** either in an IDE such as ***Spyder*** or in shell.
@@ -37,8 +38,9 @@ python3 splines.py
 
 By default, the script ***splines.py*** target an dataset example located in ***Dataset/spnbmd.csv***. Columns names of variables X and Y are respectively ***'age'*** and ***'spnbmd'***.
 ```python
-def main():
+if __name__ == "__main__" :
     input_path = 'Dataset/spnbmd.csv'
+    splines(input_path)
 ```
 ```bash
 python3 splines.py

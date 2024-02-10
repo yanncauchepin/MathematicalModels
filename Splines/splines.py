@@ -6,7 +6,7 @@ import pandas as pd
 import csv
 
 def splines(input_path):
-    
+
     # BUILDING X AND Y
     X = np.array([], float)
     Y = np.array([], float)
@@ -16,7 +16,7 @@ def splines(input_path):
         for row in reader :
             X = np.append(X, float(row[2]))
             Y = np.append(Y, float(row[4]))
-    
+
     # BUILDING FROM PANDAS WITH GENERIC X AND Y COLUMNS
 
     size = np.size(X) - 1  # Size of X - 1
@@ -131,9 +131,6 @@ def splines(input_path):
     plt.savefig('Output/smoothing_spline.png')
     plt.show()
 
-def main():
+if __name__ == "__main__" :
     input_path = 'Dataset/spnbmd.csv'
     splines(input_path)
-
-if __name__ == "__main__":
-    main()
