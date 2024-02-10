@@ -133,4 +133,7 @@ def splines(input_path):
 
 if __name__ == "__main__" :
     input_path = 'Dataset/spnbmd.csv'
+    X_column = 'age'
+    Y_column = 'spnbmd'
+    spline_parameters = dict()
     splines(input_path)

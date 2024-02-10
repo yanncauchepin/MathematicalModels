@@ -23,10 +23,17 @@ The tolerated format in the script are multiple such as ***csv*** or ***xlsx***.
 cd Splines
 ```
 
-2. Open the script ***splines.py*** and edit the input path in ***main*** function to target the desired dataset to use. Indicate also the column names of the interest variable X and Y. Additionally, the user can inform some parameters to configure the algorithm.
+2. Open the script ***splines.py*** and edit the input path in ***main*** function to inform variables :
+- ***input_path*** : Path to the desired dataset to use.
+- ***X_column*** : Single column name of the interest variable X.
+- ***Y_column*** : Single column name of the interest variable Y.
+- *(Optional)* ***spline_parameters*** : Dictionary of parameters to configure the spline algorithm.
 ```python
 if __name__ == "__main__" :
     input_path = 'Dataset/input_path'
+    X_column = X_column
+    Y_column = Y_column
+    spline_parameters = dict()
     splines(input_path)
 ```
 
@@ -40,6 +47,9 @@ By default, the script ***splines.py*** target an dataset example located in ***
 ```python
 if __name__ == "__main__" :
     input_path = 'Dataset/spnbmd.csv'
+    X_column = 'age'
+    Y_column = 'spnbmd'
+    spline_parameters = dict()
     splines(input_path)
 ```
 ```bash
