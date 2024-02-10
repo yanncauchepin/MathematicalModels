@@ -11,6 +11,7 @@ Before running this code, ensure you have the following :
 
 ## Usage ##
 
+-
 
 ### Splines ###
 
@@ -30,7 +31,7 @@ Note that the input_path is handled in multiple format such as ***csv***, ***xls
 ```bash
 python3 splines.py
 ```
-### Example ###
+#### Example ####
 
 By default, the script ***splines.py*** target an dataset example located in ***Dataset/spnbmd.csv***. Columns names of variables X and Y are respectively ***'age'*** and ***'spnbmd'***.
 ```bash
