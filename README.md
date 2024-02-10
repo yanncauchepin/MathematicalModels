@@ -23,7 +23,7 @@ cd Splines
 def main():
     input_path = 'Dataset/input_path'
 ```
-Note that the input_path is handled in multiple format such as ***csv***, ***xlsx***.
+Note that the script handled multiple format of dataset such as ***csv***, ***xlsx***.
 
 3. Run the script ***splines.py*** either in an IDE such as ***Spyder*** or in shell.
 ```bash
