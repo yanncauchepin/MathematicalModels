@@ -9,6 +9,11 @@ Before running this code, ensure you have the following :
 
 - Python packages described in ***requirements.txt***.
 
+## Input Dataset ##
+
+The input dataset must be a table containing at least two columns of quantitative values.
+The format tolerate in the script are multiple such as ***csv*** or ***xlsx***.
+
 ## Usage ##
 
 ### Splines ###
@@ -23,7 +28,6 @@ cd Splines
 def main():
     input_path = 'Dataset/input_path'
 ```
-Note that the script handled multiple format of dataset such as ***csv***, ***xlsx***.
 
 3. Run the script ***splines.py*** either in an IDE such as ***Spyder*** or in shell.
 ```bash
