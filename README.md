@@ -37,7 +37,7 @@ if __name__ == "__main__" :
     splines(input_path)
 ```
 
-3. Run the script ***splines.py*** either in an IDE such as ***Spyder*** or in shell.
+3. Run the script ***splines.py*** either in an IDE such as *Spyder* or in shell.
 ```bash
 python3 splines.py
 ```
