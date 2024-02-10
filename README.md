@@ -18,12 +18,12 @@ The tolerated format in the script are multiple such as ***csv*** or ***xlsx***.
 
 ### Splines ###
 
-1. Navigate to the ***Splines*** directory containing the main script ***splines.py***.
+1. Navigate to the ***Splines*** directory containing the main script ***spline.py***.
 ```bash
 cd Splines
 ```
 
-2. Open the script ***splines.py*** and edit the input path in ***main*** function to inform variables :
+2. Open the script ***spline.py*** and edit the input path in ***main*** function to inform variables :
 - ***input_path*** : Path to the desired dataset to use.
 - ***X_column*** : Single column name of the interest variable X.
 - ***Y_column*** : Single column name of the interest variable Y.
@@ -34,26 +34,26 @@ if __name__ == "__main__" :
     X_column = X_column
     Y_column = Y_column
     spline_parameters = dict()
-    splines(input_path)
+    spline(input_path)
 ```
 
-3. Run the script ***splines.py*** either in an IDE such as *Spyder* or in shell.
+3. Run the script ***spline.py*** either in an IDE such as *Spyder* or in shell.
 ```bash
-python3 splines.py
+python3 spline.py
 ```
 #### Example ####
 
-By default, the script ***splines.py*** target an dataset example located in ***Dataset/spnbmd.csv***. Columns names of variables X and Y are respectively ***'age'*** and ***'spnbmd'***.
+By default, the script ***spline.py*** target an dataset example located in ***Dataset/spnbmd.csv***. Columns names of variables X and Y are respectively ***'age'*** and ***'spnbmd'***.
 ```python
 if __name__ == "__main__" :
     input_path = 'Dataset/spnbmd.csv'
     X_column = 'age'
     Y_column = 'spnbmd'
     spline_parameters = dict()
-    splines(input_path)
+    spline(input_path)
 ```
 ```bash
-python3 splines.py
+python3 spline.py
 ```
 
 ## Results ##

@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import csv
 
-def splines(input_path):
+def spline(input_path):
 
     # BUILDING X AND Y
     X = np.array([], float)
@@ -136,4 +136,4 @@ if __name__ == "__main__" :
     X_column = 'age'
     Y_column = 'spnbmd'
     spline_parameters = dict()
-    splines(input_path)
+    spline(input_path)
