@@ -1,4 +1,5 @@
-# Mathematical Models in Python #
+# Mathematical Models #
+> ### Language : Python ###
 
 This repository contains mathematical models :
 - **Splines** : Consist of piecewise-defined polynomial functions that are smoothly connected at specific points, known as knots. Especially used in interpolation and curve fitting.

@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import csv
 
-def spline(input_path):
+def spline (input_path):
 
     # BUILDING X AND Y
     X = np.array([], float)
