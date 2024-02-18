@@ -66,4 +66,3 @@ The script display in shell the result in the spline computing. Additionally, th
 - [ ] Edit the data import by using pandas. Add names of X and Y columns in parameters in main. Handle the case of dataset in csv and excel.
 - [ ] Adapt names of variables to make calculations easier to interpret. Refresh learning.
 - [ ] Save scores in an output file in text format.
-- [ ] Adapt the repository to well developer traditions.
