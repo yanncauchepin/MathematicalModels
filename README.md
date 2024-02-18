@@ -19,9 +19,9 @@ The tolerated format in the script are multiple such as ***csv*** or ***xlsx***.
 
 ### Splines ###
 
-1. Navigate to the ***Splines*** directory containing the main script ***spline.py***.
+1. Navigate to the **splines** directory containing the main script ***spline.py***.
 ```bash
-cd Splines
+cd splines
 ```
 
 2. Open the script ***spline.py*** and edit the input path in ***main*** function to inform variables :
@@ -31,7 +31,7 @@ cd Splines
 - *(Optional)* ***spline_parameters*** : Dictionary of parameters to configure the spline algorithm.
 ```python
 if __name__ == "__main__" :
-    input_path = 'Dataset/input_path'
+    input_path = 'dataset/input_path'
     X_column = X_column
     Y_column = Y_column
     spline_parameters = dict()
@@ -44,10 +44,10 @@ python3 spline.py
 ```
 #### Example ####
 
-By default, the script ***spline.py*** target an dataset example located in ***Dataset/spnbmd.csv***. Columns names of variables X and Y are respectively ***'age'*** and ***'spnbmd'***.
+By default, the script ***spline.py*** target an dataset example located in ***dataset/spnbmd.csv***. Columns names of variables X and Y are respectively ***'age'*** and ***'spnbmd'***.
 ```python
 if __name__ == "__main__" :
-    input_path = 'Dataset/spnbmd.csv'
+    input_path = 'dataset/spnbmd.csv'
     X_column = 'age'
     Y_column = 'spnbmd'
     spline_parameters = dict()
@@ -59,7 +59,7 @@ python3 spline.py
 
 ## Results ##
 
-The script display in shell the result in the spline computing. Additionnaly, the program save those score in the ***Output*** directory in a file named ***output.txt***. In this same ***Output*** directory the user will see the graphic of the variable distribution and the spline line computed in the file named ***graphic.png***.
+The script display in shell the result in the spline computing. Additionally, the program save those score in the **output** directory in a file named ***output.txt***. In this same **output** directory the user will see the graphic of the variable distribution and the spline line computed in the file named ***graphic.png***.
 
 ## To do list ##
 
