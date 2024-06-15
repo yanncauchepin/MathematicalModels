@@ -56,13 +56,3 @@ if __name__ == "__main__" :
 ```bash
 python3 spline.py
 ```
-
-## Results ##
-
-The script display in shell the result in the spline computing. Additionally, the program save those score in the **output** directory in a file named ***output.txt***. In this same **output** directory the user will see the graphic of the variable distribution and the spline line computed in the file named ***graphic.png***.
-
-## To do list ##
-
-- [ ] Edit the data import by using pandas. Add names of X and Y columns in parameters in main. Handle the case of dataset in csv and excel.
-- [ ] Adapt names of variables to make calculations easier to interpret. Refresh learning.
-- [ ] Save scores in an output file in text format.
