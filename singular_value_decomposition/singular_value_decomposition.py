@@ -21,14 +21,26 @@ def define_truncated_matrices(U, S, V, num_eigenvalues):
 def plot_eigenvalues_evolution(S):
     plt.figure(figsize=(6, 4))
     plt.plot(np.arange(len(S)), S, 'o-')
+    plt.yscale('log')
     plt.title('Eigenvalues')
     plt.xlabel('Index')
-    plt.ylabel('Magnitude')
+    plt.ylabel('Magnitude (log scale)')
     plt.show()
+
+def plot_cumulative_energy(S):
+    cumulative_energy = np.cumsum(S) / np.sum(S)
+    plt.figure(figsize=(6, 4))
+    plt.plot(np.arange(len(S)), cumulative_energy, 'o-')
+    plt.title('Cumulative Energy')
+    plt.xlabel('Index')
+    plt.ylabel('Cumulative Energy')
+    plt.show()
+
 
 def reconstruct_image(U_truncated, S_truncated, V_truncated):
     image_reconstructed = U_truncated @ S_truncated @ V_truncated
     return image_reconstructed
+
 
 def display_comparison_images(image_array, image_reconstructed):
     fig, axs = plt.subplots(1, 2, figsize=(10, 5))
@@ -52,8 +64,10 @@ if __name__=='__main__':
     image_array = read_image(image_path)
     U, S, V = compute_svd(image_array)
     plot_eigenvalues_evolution(S)
+    plot_cumulative_energy(S)
     num_eigenvalues = 50
     U_truncated, S_truncated, V_truncated = define_truncated_matrices(U, S, V, num_eigenvalues)
     image_reconstructed = reconstruct_image(U_truncated, S_truncated, V_truncated)
+    # image_reconstructed = np.rint(image_reconstructed).astype(int)
     display_comparison_images(image_array, image_reconstructed)
 
